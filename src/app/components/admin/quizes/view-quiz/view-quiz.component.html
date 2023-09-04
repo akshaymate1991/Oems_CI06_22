@@ -1,0 +1,142 @@
+<div class="container-fluid g-0">
+    <div class="row">
+        <div class="col-12 category-Banner mt-2">
+            <h1 class="text-start">All Quizes here</h1>
+        </div>
+
+    </div>
+
+</div>
+<button class="add_btn" mat-raised-button [routerLink]="'/admin-dashboard/add-quiz'">Add
+    New<mat-icon>add</mat-icon></button>
+
+
+<div class="row">
+    <div class="col-11 row">
+        <div class="col-12">
+            <div class="categoryList" *ngFor="let data of  quizData" >
+                <div class="card"  >
+                    <div class="card-header ">
+                        <div class="card-title">
+                            <tr>
+                                <th> <mat-icon>quiz </mat-icon> Title:</th>
+                                <td> {{data.title}}</td>
+                                <td class="text-end2">
+                                    <div class="bulletsPara">
+                                        <p>Max Marks: {{data.maxMarks}}</p>
+                                    </div>
+                                </td>
+                                <td class="text-end">
+                                    <div class="bulletsPara">
+                                        <p>No. of Question:{{data.numberOfQuestions}} </p>
+                                    </div>
+                                </td>
+
+
+
+                            </tr>
+                        </div>
+                    </div>
+                    <div class="card-body">
+
+                        <ul>
+                            <table>
+                                <!-- <li>
+                                    <tr>
+                                        <th>Quiz No:</th>
+                                        <td>01</td>
+                                    </tr>
+                                </li> -->
+
+                                <li>
+                                    <tr>
+                                        <th>Description:</th>
+                                        <td> {{data.description}}</td>
+                                    </tr>
+                                </li>
+                                <td class="start">
+                                    <button mat-raised-button class="mx-5" [routerLink]="['/admin-dashboard/view-questions/'+data.quiz_id+'/'+data.title]"><mat-icon
+                                            class="dl_btn">all_outline</mat-icon>All Questions</button>
+                                    <button mat-raised-button><mat-icon class="dl_btn">start</mat-icon>Start
+                                        Exam</button>
+                                </td>
+
+                            </table>
+
+                        </ul>
+                        <button mat-button [routerLink]="['/admin-dashboard/update-quiz/'+data.quiz_id]"  title="Update Quiz"><mat-icon
+                                class="up_btn">create</mat-icon></button>
+
+                        <button mat-button title="Delete Quiz" (click)="deleteQuiz(data.quiz_id)"><mat-icon class="dl_btn" >delete_outline</mat-icon></button>
+                      
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <!-- <div class="col-11 row">
+        <div class="col-12">
+            <div class="categoryList">
+                <div class="card">
+                    <div class="card-header ">
+                        <div class="card-title">
+                            <tr>
+                                <th><mat-icon>quiz</mat-icon> Title:</th>
+                                <td> CSS </td>
+                                <td class="text-end2">
+                                    <div class="bulletsPara">
+                                        <p> Max Marks:100</p>
+                                    </div>
+                                </td>
+                                <td class="text-end">
+                                    <div class="bulletsPara">
+                                        <p> No. of Question:10</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </div>
+                    </div>
+                    <div class="card-body">
+
+                        <ul>
+                            <table>
+                                <li>
+                                    <tr>
+                                        <th>Quiz No:</th>
+                                        <td>02</td>
+                                    </tr>
+                                </li>
+
+                                <li>
+                                    <tr>
+                                        <th>Description:</th>
+                                        <td>This is CSS Quiz.</td>
+                                    </tr>
+                                </li>
+                                <td class="start">
+                                    <button mat-raised-button class="mx-5" [routerLink]="'/admin-dashboard/view-questions'"><mat-icon
+                                            class="dl_btn">all_outline</mat-icon>All Questions</button>
+                                    <button mat-raised-button><mat-icon class="dl_btn">start</mat-icon>Start
+                                        Exam</button>
+                                </td>
+                            </table>
+                        </ul>
+                        <button mat-button title="Update Quiz"><mat-icon class="up_btn" >create</mat-icon></button>
+                        <button mat-button title="Delete Quiz"><mat-icon class="dl_btn" >delete_outline</mat-icon></button>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div> -->
+  
+
+</div>

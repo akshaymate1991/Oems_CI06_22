@@ -1,0 +1,53 @@
+<div class="container-fluid g-0">
+    <div class="row">
+        <div class="col-12 category-Banner mt-2">
+            <h1 class="text-start">Questions of {{quiz_title}}</h1>
+        </div>
+    </div>
+    <button class="add_btn" mat-raised-button routerLink="/admin-dashboard/add-questions/{{quiz_id}}/{{quiz_title}}">Add
+        New<mat-icon>add</mat-icon></button>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-11">
+                <div class="col-12">
+                    <mat-card *ngFor="let item of questions; let i=index">
+                        <mat-card-content>
+                            <dl>
+                                <dt>
+                                    <p><b>Q.{{i+1}} : </b> {{item.content}}</p>
+                                </dt>
+
+                                <div class="row g-0">
+                                    <ol class="row g-0">
+                                        <li class="col-5 me-5">{{item.option1}}</li>
+                                        <li class="col-5 ">{{item.option2}}</li>
+                                        <li class="col-5 me-5">{{item.option3}}</li>
+                                        <li class="col-5">{{item.option4}}</li>
+                                    </ol>
+                                </div>
+                            </dl>
+
+                            <mat-divider></mat-divider>
+
+                            <mat-label>
+                                <p><b style="color: rgb(4, 116, 4);">Correct Answer :- {{item.answer}}</b></p>
+                            </mat-label>
+
+                            <div class="controls">
+                                <button mat-raised-button
+                                    routerLink="/admin-dashboard/update-questions/{{item.question_id}}/{{quiz_title}}"
+                                    title="Update Quiz"><span>Update</span><mat-icon
+                                        class="up_btn">create</mat-icon></button>
+
+                                <button mat-raised-button title="Delete Quiz"
+                                    (click)="deleteQuestion(item.question_id)"> <span>Delete</span> <mat-icon
+                                        class="dl_btn">delete_outline</mat-icon></button>
+                            </div>
+
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+            </div>
+        </div>
+    </div>

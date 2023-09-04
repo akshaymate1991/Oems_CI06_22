@@ -1,0 +1,12 @@
+.smallWindow{
+    background-color: rgb(216, 177, 244);
+    height: 300px;
+}
+
+.instru{
+    color: red;
+}
+
+li{
+    margin-top: 15px;
+}

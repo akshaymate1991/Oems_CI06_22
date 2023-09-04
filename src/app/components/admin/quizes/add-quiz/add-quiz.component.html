@@ -1,0 +1,63 @@
+<div class="container-fluid g-0">
+    <div class="row">
+        <div class="col-12 category-Banner mt-2">
+            <h1 class="text-start">Add Quiz</h1>
+        </div>
+
+    </div>
+
+    <div class="col-11">
+        <div class="categoryList col-11">
+            <mat-card class="mt-2 col-12">
+                <h2 class="m-2"><mat-icon>add_circle_outline</mat-icon></h2>
+                <mat-card-content>
+                    <div class="container-fluid my-2">
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+
+                                <form class="row" [formGroup]="addQuizData" (ngSubmit)="addQuiz()">
+                                    <mat-form-field appearance="outline">
+                                        <mat-label>Quiz Title:</mat-label>
+                                        <input class="oline" type="text" for="title" name="title"
+                                            formControlName="title" matInput>
+                                    </mat-form-field>
+                                    <mat-form-field appearance="outline">
+                                        <mat-label>Quiz description:</mat-label>
+                                        <textarea class="oline" type="text" rows="4" for="description"
+                                            name="description" formControlName="description" matInput></textarea>
+                                    </mat-form-field>
+                                    <mat-form-field appearance="outline" class="col-6">
+                                        <mat-label>Max. Marks</mat-label>
+                                        <input class="oline" type="number" for="maxMarks" name="maxMarks"
+                                            formControlName="maxMarks" matInput>
+                                    </mat-form-field>
+                                    <mat-form-field appearance="outline" class="col-6">
+                                        <mat-label>No. of Question</mat-label>
+                                        <input class="oline" type="number" for="numberOfQuestions"
+                                            name="numberOfQuestions" formControlName="numberOfQuestions" matInput>
+                                    </mat-form-field>
+                                    <mat-form-field appearance="outline">
+                                        <mat-label>Category Id</mat-label>
+                                        <mat-select formControlName="category_id" >
+                                            <mat-option  *ngFor="let item of categoryId" [value]="item.category_id" >{{item.title}}</mat-option>
+                                        
+                                        </mat-select>
+                                    </mat-form-field>
+
+                                    <mat-slide-toggle class="my-1" formControlName="active" color="primary" checked="false">
+                                        Publish Status
+                                    </mat-slide-toggle>
+                                    
+                                    <div class="text-center">
+                                        <button type="submit" class="add_btn" mat-raised-button>Add Quiz</button>
+                                    </div>
+                                    
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>

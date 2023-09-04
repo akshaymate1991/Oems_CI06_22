@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&family=Dancing+Script&family=Maven+Pro&family=Monoton&display=swap');
+
+* {
+    margin: 0;
+}
+
+.card1 {
+    height: 490px;
+    width: 350px;
+    background-color: #e9b1f677;
+    margin-top: 25px;
+    padding: 12px;
+    border-radius: 20%;
+    position: absolute;
+    left: 595px;
+}
+
+.card2 {
+    height: 490px;
+    width: 350px;
+    background-color: #e9b1f677;
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 20%;
+    position: relative;
+    left: 140px;
+}
+
+.card,
+.card-bod {
+    border-radius: 30%;
+    background-color: rgb(219, 196, 242);
+
+}
+
+.card-header {
+    border-radius: 38%;
+    background-color: rgb(185, 133, 234);
+
+}
+
+h2 {
+    font-family: 'Changa One', cursive;
+    color: rgb(52, 51, 51);
+    word-spacing: 3px;
+    letter-spacing: 0.6px;
+    /* font-family: 'Dancing Script', cursive; */
+    /* font-family: 'Maven Pro', sans-serif; */
+    /* font-family: 'Monoton', cursive; */
+}
+
+.card-header>img {
+    border-radius: 40%;
+
+}
+
+td {
+    font-weight: 900;
+    /* background-color:rgb(238, 231, 231); */
+    padding-left: 10px;
+    margin-bottom: 10px;
+    color: rgb(58, 6, 53);
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+th {
+    text-decoration: underline;
+    text-underline-offset: 1.5px;
+    margin-bottom: 10px;
+    padding-right: 0px;
+    color: rgb(84, 75, 75);
+    font-weight: 900;
+    letter-spacing: 1px;
+
+}
+
+table {
+    width: 200px;
+    margin-left: 60px;
+    font-size: 14.5px;
+    font-family: 'Changa One', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Maven Pro', sans-serif;
+    /* font-family: 'Monoton', cursive; */
+}

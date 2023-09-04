@@ -1,0 +1,103 @@
+<div class="bootstrap-wrapper" *ngIf="!isSubmit">
+
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-md-2 ">
+                <mat-card class="smallWindow">
+                    <h2 class="text-center">Instructions:</h2>
+                    <mat-card-content>
+                        <ul class="instru ms-0">
+                            <li>Do not Refresh the page, otherwise you will get redirected to the new Question.</li>
+                            <li>Do not switch the other tabs in window.</li>
+                            <li>Do not Minimize the window.</li>
+    
+                        </ul>
+                    </mat-card-content>
+                </mat-card>
+    
+            </div>
+    
+            <div class="col-7">
+    
+                <ng-container>
+                    <h1 class="mt-1">{{question[0].quiz.title}}</h1>
+                </ng-container>
+                <mat-card class="mt-1" *ngFor="let item of question, let i =index">
+                    <mat-card-content>
+                        <h3><b>Q.{{i+1}} :</b> <span class="ms-1" [(ngModel)] ="item.content" >{{item.content}}</span> </h3>
+                        <mat-divider></mat-divider>
+                        <div class="col-md-6">
+                            <input type="radio" [value]="item.option1" [name]="item.option1" [(ngModel)]="item.givenAnswer" >{{item.option1}}
+                        </div>
+                        <div class="col-md-6">
+                            <input type="radio" [value]="item.option2" [name]="item.option2" [(ngModel)]="item.givenAnswer" >{{item.option2}}
+                        </div>
+                        <div class="col-md-6">
+                            <input type="radio" [value]="item.option3" [name]="item.option3" [(ngModel)]="item.givenAnswer" >{{item.option3}}
+                        </div>
+                        <div class="col-md-6">
+                            <input type="radio" [value]="item.option4" [name]="item.option4" [(ngModel)]="item.givenAnswer" >{{item.option4}}
+                        </div>
+                    </mat-card-content>
+                
+                </mat-card>
+    
+                <div class="container mt-3 text-center">
+                    <button mat-raised-button color="warn" (click)="directSubmitExam()" >Submit Exam</button>
+                </div>
+            </div>
+    
+            <div class="col-md-3">
+    
+                <mat-card>
+                    <mat-card-header>
+                        <mat-card-title>Exam Progress</mat-card-title>
+                        <mat-card-subtitle>Exam will be automatically Submit when time reaches to <b>00:00
+                            </b></mat-card-subtitle>
+                    </mat-card-header>
+                    <mat-card-content class="text-center">
+                        <h2 class="">{{getFormattedTime()}}</h2>
+                        <mat-spinner class="text-center ms-5" mode="determinate" [value]="(timer/(question.length*1*60))*100"></mat-spinner>
+                    </mat-card-content>
+                </mat-card>
+    
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="bootstrap-wrapper my-2" *ngIf=" isSubmit">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+
+                <mat-card>
+                    <mat-card-header>
+                        <mat-card-title><h1>Exam Result</h1></mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <h3>Attempted Questions : <b>{{attempted}}</b></h3>
+                        <h3>Correct Answers : <b>{{correctAnswers}}</b></h3>
+                        <h3>Marks Got : <b>{{marksGot}}</b></h3>
+                    </mat-card-content>
+
+                    <mat-card-actions >
+                       <div class="text-center justify-content-center">
+                        <button mat-raised-button color="warn" class="mx-2" (click)="printResults()"> Print </button>
+                        <button mat-raised-button color="warn" [routerLink]="'/user-dashboard/0'"> Home </button>
+                       </div>
+                    </mat-card-actions>
+                </mat-card>
+
+
+                
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+</div>

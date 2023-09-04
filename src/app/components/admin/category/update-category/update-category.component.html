@@ -1,0 +1,41 @@
+
+<div class="container-fluid g-0">
+    <div class="row">
+        <div class="col-12 category-Banner mt-2">
+            <h1 class="text-start">Update Category</h1>
+        </div>
+        
+    </div>
+
+<div class="col-11">
+    <div class="categoryList col-11">
+        <mat-card class="mt-2 col-12">
+            <h2 class="m-2"><mat-icon>update_circle</mat-icon></h2>
+            <mat-card-content>
+                <div class="container-fluid my-2">
+                    <div class="row justify-content-center">
+                        <div class="col-8">
+                            <form class="row" [formGroup]="updateCategoryForm"  >
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Category Id:</mat-label>
+                                    <input class="oline" type="text"  for="category_id" name="category_id" formControlName="category_id"  matInput>
+                                </mat-form-field>
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Category Title:</mat-label>
+                                    <input class="oline" type="text"   for="title" name="title" formControlName="title"  matInput>
+                                </mat-form-field>
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Category description:</mat-label>
+                                    <textarea  class="oline" type="text" rows="5"  for="description" name="description" formControlName="description"  matInput></textarea>
+                                </mat-form-field>
+                                <div class="text-center">
+                                    <button color="primary" type="submit"  mat-raised-button (click)="updateCategory()">Update Category</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

@@ -1,0 +1,102 @@
+<div class="container-fluid g-0" id="login-form">
+
+    <div class="row justify-content-center">
+
+
+        <div class="col-2 sidenav">
+            <div class="imgDiv">
+                <img src="https://img.icons8.com/?size=1x&id=2wUxiAulS3fj&format=png">
+                <p class="imgDivName">Register Yourself</p>
+              
+            </div>
+              <img class="standingMan"
+                    src="https://cdn4.iconfinder.com/data/icons/agile-illustrations/700/149-256.png"> 
+
+        </div>
+
+        <div class="col-10">
+            <div class="row">
+
+                <div class="box">
+                    
+                    <div class=" col-12 formCol">
+
+                        <form class="row" [formGroup]="signUpForm" (ngSubmit)="sendRegistrationData()">
+
+                            <div class="row">
+                                <!-- <img class="box1" src="" alt=""> -->
+
+                                <h1 class="text-center"> Create Account </h1>
+
+                                <div class="col-6 row">
+                                    <mat-form-field appearance="outline">
+                                        <mat-label>First Name:</mat-label>
+                                        <input type="text" for="firstname" name="firstname" formControlName="firstname" matInput>
+                                    </mat-form-field>
+            
+                                </div>
+    
+                                <div class="col-6 row">
+                                    <mat-form-field appearance="outline">
+                                        <mat-label>Last Name:</mat-label>
+                                        <input type="text" for="lastname" name="lastname" formControlName="lastname" matInput>
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-5 row">
+                                    <mat-form-field appearance="outline">
+                                        <mat-label>Email:</mat-label>
+                                        <input type="email" for="email" name="email" formControlName="email" matInput>
+                                    </mat-form-field>
+            
+                                </div>
+    
+                                <div class="col-5 row">
+                                    <mat-form-field appearance="outline">
+                                        <mat-label>Phone No:</mat-label>
+                                        <input type="tel" for="phone" name="phone" formControlName="phone" matInput>
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-5 row">
+                                    <mat-form-field appearance="outline">
+                                        <mat-label>User name:</mat-label>
+                                        <input type="text" for="username" name="username" formControlName="username" matInput>
+                                    </mat-form-field>
+            
+                                </div>
+    
+                                <div class="col-5 row">
+                                    <mat-form-field class="form-group" appearance="outline">
+                                        <mat-label>Password:</mat-label>
+                                        <input type="password" for="password" name="password" formControlName="password" matInput>
+                                    </mat-form-field>
+                                </div>
+                            </div>
+
+                            <button mat-raised-button color="warn">Sign Up</button>
+  
+                           
+        
+                        </form>
+
+                       
+                    </div>
+
+                
+
+                   
+
+
+                   
+                </div>
+                
+               
+
+               
+            </div>
+
+
+
+        </div>
+
+    </div>
+</div>

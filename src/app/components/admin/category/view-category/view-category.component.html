@@ -1,0 +1,182 @@
+<div class="container-fluid g-0">
+    <div class="row">
+        <div class="col-12 category-Banner mt-2">
+            <h1 class="text-start">All Categories here</h1>
+        </div>
+
+    </div>
+
+</div>
+<button class="add_btn" mat-raised-button color="primary" [routerLink]="'/admin-dashboard/add-category'">Add
+    New<mat-icon>add</mat-icon></button>
+
+
+<div class="row">
+    <div class="col-4"  *ngFor="let category of data"  >
+        <div class="col-12" >
+            <div class="categoryList">
+                <div class="card" >
+                    <div class="card-header ">
+                        
+                        <div class="card-title">
+                            <tr>
+                                <th> <mat-icon>category</mat-icon> Title:</th>
+                                <td>{{category.title}}</td>
+                            </tr>
+                        </div>
+                    </div>
+                    <div class="card-body" >
+
+                        <ul>
+                            <table>
+                                <li>
+                                    <tr>
+                                        <th>Category Id:</th>
+                                        <td>{{category.category_id}}</td>
+                                    </tr>
+                                </li>
+
+                                <li>
+                                    <tr>
+                                        <th>Description:</th>
+                                        <td>{{category.description}}</td>
+                                    </tr>
+                                </li>
+                            </table>
+                        </ul>
+                        <button mat-button [routerLink]="['/admin-dashboard/updateCategory/'+category.category_id]"><mat-icon
+                                class="up_btn">create</mat-icon></button>
+                        <button mat-button (click)="deleteCategory(category.category_id)"><mat-icon class="dl_btn">delete_outline</mat-icon></button>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- <div class="col-11 row">
+        <div class="col-12">
+            <div class="categoryList">
+                <div class="card">
+                    <div class="card-header ">
+                        <div class="card-title">
+                            <tr>
+                                <th><mat-icon>category</mat-icon> Title:</th>
+                                <td>CSS</td>
+                            </tr>
+                        </div>
+                    </div>
+                    <div class="card-body">
+
+                        <ul>
+                            <table>
+                                <li>
+                                    <tr>
+                                        <th>Category Id:</th>
+                                        <td>02</td>
+                                    </tr>
+                                </li>
+
+                                <li>
+                                    <tr>
+                                        <th>Description:</th>
+                                        <td>This is CSS Category.</td>
+                                    </tr>
+                                </li>
+                            </table>
+                        </ul>
+                        <button mat-button><mat-icon class="up_btn">create</mat-icon></button>
+                        <button mat-button><mat-icon class="dl_btn">delete_outline</mat-icon></button>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div> -->
+    <!-- <div class="col-5 row">
+        <div class="col-12">
+            <div class="categoryList">
+                <div class="card">
+                    <div class="card-header ">
+                        <div class="card-title">
+                            <tr >
+                                <th>Title:</th>
+                                <td>BOOTSTRAP</td>
+                            </tr>
+                        </div>
+                    </div>
+                    <div class="card-body">
+
+                        <ul>
+                            <table>
+                                <li>
+                                    <tr>
+                                        <th>Category Id:</th>
+                                        <td>03</td>
+                                    </tr>
+                                </li>
+
+                                <li>
+                                    <tr>
+                                        <th>Description:</th>
+                                        <td>This is Bootstrap Category.</td>
+                                    </tr>
+                                </li>
+                            </table>
+                        </ul>
+                        <button mat-button><mat-icon class="up_btn">update</mat-icon></button>
+                        <button mat-button><mat-icon  class="dl_btn">delete_outline</mat-icon></button>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-5 row">
+        <div class="col-12">
+            <div class="categoryList">
+                <div class="card">
+                    <div class="card-header ">
+                        <div class="card-title">
+                            <tr >
+                                <th>Title:</th>
+                                <td>JAVASCRIPT</td>
+                            </tr>
+                        </div>
+                    </div>
+                    <div class="card-body">
+
+                        <ul>
+                            <table>
+                                <li>
+                                    <tr>
+                                        <th>Category Id:</th>
+                                        <td>04</td>
+                                    </tr>
+                                </li>
+
+                                <li>
+                                    <tr>
+                                        <th>Description:</th>
+                                        <td>This is Javascript Category.</td>
+                                    </tr>
+                                </li>
+                            </table>
+                        </ul>
+                        <button mat-button><mat-icon class="up_btn">update</mat-icon></button>
+                        <button mat-button><mat-icon  class="dl_btn">delete_outline</mat-icon></button>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div> -->
+
+</div>

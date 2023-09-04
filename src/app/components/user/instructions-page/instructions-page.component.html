@@ -1,0 +1,50 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-10">
+      <div class="main">
+        <div class="mainIntro">
+          <h3 class="para2">Read the instructions of this page carefully </h3>
+          <!-- <p class="para1">One more step to Go</p> -->
+          <h2 class="para2 mb-1">{{quiz.title}}</h2>
+          <p class="para5 mb-0">{{quiz.description}}</p>
+        </div>
+        <mat-divider class=""></mat-divider>
+
+        <div class="instructionsList para3">
+          <ul>
+            <h2 class="mt-1 para1">Instructions to be follow: </h2>
+            <li>This Quiz is only for the Exam purpose.</li>
+            <li>Read all Questions carefully.</li>
+            <li>You can attempt the same quiz multiple times.</li>
+            <li>You have to submit the quiz in <b> {{quiz.numberOfQuestions * 1}} Minutes</b> .</li>
+            <li>There are <b> {{quiz.numberOfQuestions}} Questions </b> in this quiz.</li>
+            <li>Each question carries <b>{{quiz.maxMarks/quiz.numberOfQuestions}} Marks</b>, No Negative marking for the wrong answers.</li>
+            <li>All Questions is of MCQ type.</li>
+          </ul>
+        </div>
+        
+
+        <div class="instructionsList para4"><hr color="black">
+          <ul>
+            <h2 class="mt-1 para1">Attempting Quiz: </h2>
+            <li>Click on the Start Button to start the current quiz.</li>
+            <li>Time counter will start at the moment you clicked the Start Exam button.</li>
+            <li>You can not resume quiz, If interupted due to any reason.</li>
+            <li>Scroll down to move to the Next question.</li>
+            <li>Click on the Submit Quiz button on completion of the quiz.</li>
+            <li>Results of the Exam will be automatically generated in the form of PDF copy.</li>
+            <li>All Questions is of MCQ type.</li>
+          </ul>
+        </div>
+        
+        
+        <a mat-raised-button  class="mt-4 p-2 readButton" (click)="startExam()">Start Exam </a> 
+      </div>
+       
+      
+    </div>
+   
+    
+  </div>
+
+</div>

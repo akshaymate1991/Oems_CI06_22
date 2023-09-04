@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&family=Dancing+Script&family=Maven+Pro&family=Monoton&display=swap');
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: rgb(42, 4, 57);
+    margin-left: 450px;
+    margin-top: 2px;
+    font-weight: 700;
+    text-shadow: 1px 0px 1px white;
+    font-family: 'Changa One', cursive;
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Maven Pro', sans-serif;
+    /* font-family: 'Monoton', cursive; */
+}
+
+.category-Banner {
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 89px;
+    background-color: rgb(243, 250, 234);
+
+}
+
+.col-11 {
+    margin: 15px;
+    font-size: 15px;
+    list-style: circle;
+    margin-top: 1px;
+
+}
+
+li {
+    list-style: circle;
+    margin: 10px;
+
+}
+
+.categoryList {
+    background-color: rgb(191, 198, 60);
+    border-radius: 15px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.card {
+    border-radius: 10%;
+    text-align: center;
+
+}
+
+.card-header {
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    background: none;
+    text-align: center;
+    font-family: 'Changa One', cursive;
+
+}
+
+.card-title {
+    margin-left: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.card-title th {
+    /* background-color: rgb(249, 131, 131); */
+    min-width: 100px;
+    min-height: 30px;
+    color: rgb(101, 189, 151);
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-shadow: 0px 1px 0px rgb(13, 1, 13);
+}
+
+.card-title td {
+    /* background-color: rgb(11, 14, 11); */
+    min-width: 200px;
+    padding-left: 20px;
+    min-height: 30px;
+    color: rgb(58, 135, 135);
+    font-size: 21px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 0px rgb(245, 226, 245);
+}
+
+td {
+    padding-left: 12px;
+    text-align: left;
+}
+
+.card-body {
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    background-color: rgb(248, 248, 223);
+    font-family: 'Changa One', cursive;
+
+    padding: 9px;
+
+}
+
+.card-body td {
+    font-weight: normal;
+    color: rgb(27, 51, 44);
+    letter-spacing: 1px;
+    font-size: 17px;
+    text-shadow: 1px 1px 0px rgb(236, 228, 236);
+    /* font-family: 'Dancing Script',     cursive; */
+    /* font-family: 'Maven Pro', sans-serif; */
+    /* font-family: 'Monoton', cursive; */
+
+}
+
+.card-body th {
+    font-weight: normal;
+    color: rgb(68, 177, 137);
+    text-shadow: 1px 1px 0px rgb(236, 228, 236);
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+.up_btn {
+    color: rgb(23, 137, 127);
+    font-size: 20px;
+}
+
+.dl_btn {
+    color: rgb(250, 4, 4);
+    font-size: 20px;
+}
+
+.add_btn {
+    margin: 10px 0px 10px 500px;
+    border-radius: 8px;
+    background-color: rgb(174, 241, 73);
+    /* border-bottom-left-radius: 40%; */
+    /* border-bottom-right-radius: 40%; */
+
+}
+
+.bulletsPara {
+    position: relative;
+    left: 300px;
+    height: 28px;
+    max-width: 225px;
+    text-align: center;
+    border-radius: 8px;
+    /* margin: 5px; */
+    /* padding-top: 3px; */
+    padding: 3px 5px;
+    background-color: rgba(188, 248, 150, 0.437);
+    font-size: 14px;
+    /* margin-left: 0px; */
+}
+
+p {
+    /* min-width: 220px; */
+    color: rgb(3, 42, 30);
+    text-shadow: 1px 0px 0px rgba(98, 245, 6, 0.318);
+    font-family: 'Maven Pro', sans-serif;
+}
+
+
+
+
+.start {
+    padding-left: 220px;
+    position: absolute;
+    bottom: 10px;
+    right: 60px;
+}

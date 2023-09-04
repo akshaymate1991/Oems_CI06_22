@@ -1,0 +1,81 @@
+<div class="container-fluid g-0">
+    <div class="row">
+        <div class="col-12 category-Banner mt-2">
+            <h1 class="text-start">Add Questions to <b style="color: rgb(109, 106, 109); text-shadow: 0px 0.5px 0.5px rgb(82, 82, 141);"> {{quiz_title}}</b> Quiz</h1>
+        </div>
+
+    </div>
+
+    <div class="col-11">
+        <div class="categoryList col-11">
+            <mat-card class="mt-2 col-12">
+                <h2 class="m-2"><mat-icon>add_circle</mat-icon></h2>
+                <mat-card-content>
+                    <div class="container-fluid my-2">
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+
+                                <form class="row" [formGroup]="addQuestionsForm" (ngSubmit)="addQuestions()">
+                                    
+                                    <mat-form-field appearance="outline">
+                                        <mat-label>Question:</mat-label>
+                                        <input class="oline" type="text" for="content" name="content"
+                                            formControlName="content"  matInput>
+                                    </mat-form-field>
+
+                                    <mat-form-field appearance="outline" class="col-6">
+                                        <mat-label>Option A</mat-label>
+                                        <input class="oline" type="text" for="option1" name="option1"
+                                            formControlName="option1" [(ngModel)]="question.option1" matInput>
+                                    </mat-form-field>
+
+                                    <mat-form-field appearance="outline" class="col-6">
+                                        <mat-label>Option B</mat-label>
+                                        <input class="oline" type="text" for="option2" name="option2"
+                                            formControlName="option2" [(ngModel)]="question.option2" matInput>
+                                    </mat-form-field>
+
+                                    <mat-form-field appearance="outline" class="col-6">
+                                        <mat-label>Option C</mat-label>
+                                        <input class="oline" type="text" for="option3" name="option3"
+                                            formControlName="option3" [(ngModel)]="question.option3" matInput>
+                                    </mat-form-field>
+                                    
+                                    <mat-form-field appearance="outline" class="col-6">
+                                        <mat-label>Option D</mat-label>
+                                        <input class="oline" type="text" for="option4" name="option4"
+                                            formControlName="option4" [(ngModel)]="question.option4" matInput>
+                                    </mat-form-field>
+
+
+
+                                    <mat-form-field appearance="outline">
+                                        <mat-select placeholder="Select Correct answer" formControlName="answer"
+                                            name="answer">
+                                            <mat-option *ngIf="question.option1"
+                                                [value]="question.option1">{{question.option1}}</mat-option>
+                                            <mat-option *ngIf="question.option2"
+                                                [value]="question.option2">{{question.option2}}</mat-option>
+                                            <mat-option *ngIf="question.option3"
+                                                [value]="question.option3">{{question.option3}}</mat-option>
+                                            <mat-option *ngIf="question.option4"
+                                                [value]="question.option4">{{question.option4}}</mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                    <mat-slide-toggle class="my-1" color="primary" checked="false">
+                                        Publish Status
+                                    </mat-slide-toggle>
+
+                                    <div class="text-center">
+                                        <button type="submit" class="add_btn" mat-raised-button> Add Question</button>
+                                    </div>
+
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&family=Dancing+Script&family=Maven+Pro&family=Monoton&display=swap');
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: rgb(42, 4, 57);
+    margin-left: 30px;
+    margin-top: 2px;
+    font-weight: 700;
+    text-shadow: 1px 0px 1px white;
+    font-family: 'Changa One', cursive;
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Maven Pro', sans-serif;
+    /* font-family: 'Monoton', cursive; */
+}
+
+h2{
+    color: rgb(42, 4, 57);
+    margin-left: 450px;
+    margin-top: 2px;
+    font-weight: 700;
+    text-shadow: 1px 0px 1px white;
+    font-family: 'Maven Pro', sans-serif;
+
+
+}
+
+.category-Banner{
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 89px;
+    background-color: rgb(240, 240, 243);
+}
+
+.categoryList{
+    background-color: rgb(171, 168, 168);
+   border-radius: 15px;
+   padding: 5px;
+}
+
+.col-11{
+    margin-left: 30px;
+    margin-top: 0px;
+    padding-top: 5px;
+}
+
+mat-card{
+    border-radius: 10%;
+    text-align: center;
+    
+   
+   
+}
+
+mat-card-content{
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    background-color: rgb(228, 228, 231);
+     font-family: 'Changa One', cursive;
+     /* font-family: 'Dancing Script', cursive; */
+     /* font-family: 'Maven Pro', sans-serif; */
+     /* font-family: 'Monoton', cursive; */
+     padding: 9px;
+     border-top: 1px solid #c7cffc;
+     
+ }
+
+mat-label{
+    color: rgb(29, 2, 39);
+} 
+
+/* :host ::ng-deep mat-form-field .mat-form-field-appearance-outline .mat-form-field-outline{
+    color: rgb(240, 233, 243);
+   
+}  */
+
+mat-slide-toggle{
+    position: relative;
+    right: 220px;
+}
+
+
+.add_btn{
+    /* margin: 10px 0px 10px 500px; */
+    border-radius: 8px;
+    background-color: rgb(242, 244, 234);
+    border: 1px solid rgba(0, 0, 0, 0.226);
+    /* border-bottom-left-radius: 40%; */
+    /* border-bottom-right-radius: 40%; */
+
+}

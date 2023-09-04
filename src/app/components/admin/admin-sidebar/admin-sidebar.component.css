@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&family=Dancing+Script&family=Maven+Pro&family=Monoton&display=swap');
+
+
+img{
+    height: 80px;
+  margin-left: 5px;
+}
+
+
+
+.secondSide{
+    position: relative;
+    top: -70px;
+}
+
+
+.imgDiv img{
+    height: 50px;
+}
+
+.imgDiv{
+    margin:12px;
+    display: flex;
+    margin-bottom: 0px;
+    margin-left: 0px;
+   }
+
+.imgDivName{
+    margin-left: 15px;
+    margin-top: 15px;
+    font-family: 'Changa One', cursive;
+    /* font-family: 'Dancing Script', cursive; */
+    /* font-family: 'Maven Pro', sans-serif;     */
+    color:rgb(170, 162, 170);
+    font-size: 16px;
+}
+.imgDiv2{
+    width: 170px;
+    height: 40px;
+    margin:15px 0px 25px 25px;
+    display: flex;
+    /* background-color: #faf6f9; */
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+    font-family: 'Changa One', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 300;
+    
+    /* font-family: 'Monoton', cursive; */
+    
+}
+
+.imgDiv2:hover{
+    background-color: #f5f2f4;
+
+}
+
+
+
+.imgDivName2{
+    /* width: 60px; */
+    margin-left: 3px;
+    margin-top: 10px;
+    font-size: 13.42px;
+    color:black;
+    font-weight: 900;
+    
+}
+
+.imgDiv2 img{
+    height: 34px;
+    width: 38px;
+   margin-top: 5px;
+}
+.imgDiv2 p{
+    height: 34px;
+    width: 100px;
+    /* background-color: #efa; */
+   
+}

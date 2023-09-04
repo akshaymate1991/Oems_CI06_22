@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#login-form{
+
+}
+
+.col-2{
+     height: 90.5vh;
+}
+
+.imgDiv img{
+    height: 50px;
+}
+
+.imgDiv{
+    position: absolute;
+    top: 0px;
+    margin:12px;
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.imgDivName{
+    margin-left: 15px;
+    margin-top: 20px;
+    font-family: 'Changa One', cursive;
+    /* font-family: 'Dancing Script', cursive; */
+    /* font-family: 'Maven Pro', sans-serif;     */
+    font-size: 16px;
+    color:rgb(170, 162, 170)
+}
+
+form{
+    padding: 20px;
+  
+}
+
+button{
+    width: 180px;
+    outline: none;
+    border: none;
+    height: 35px;
+    margin-left: 150px;
+    
+}
+
+
+
+h1{
+    color: darkslateblue;
+    font-family: 'Changa One', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Maven Pro', sans-serif;
+    margin-top: -10px;
+    margin-left: -15px;
+    font-weight: 600;
+}
+
+.formCol{
+    width: 95%;
+    position: relative;
+    background-color: rgb(249, 242, 247);
+    left: 15px;
+    top: 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(199, 186, 186);
+}
+
+form{
+    width: 108%;
+}
+
+.col-6{
+    width: 87%;
+    margin:-3px 13px;
+}
+
+.col-5{
+    width: 42%;
+
+    margin: -6px 0px 0px 14px;
+
+}
+
+.box{
+    width: 580px;
+    height: 435px;
+    background-color: rgb(244, 236, 221);
+    position: relative;
+    top: 40px;
+    left: 160px;
+    border-radius: 10px;
+    border: 1px dashed rgb(17, 3, 17);
+    box-shadow: 8px 8px 25px rgb(74, 56, 31);
+
+}
+
+.box1{
+    width: 155px;
+    height: 150px;
+    position: relative;
+    top: 0px;
+    left: 185px;
+    border-radius: 8px;
+
+}
+
+.standingMan{
+    width: 450px;
+    height:450px;
+    margin-left: 0px;
+    margin-top: 40px;
+}
+
+.signQuote{
+    margin-left: 30px;
+    margin-top: -180px;
+    z-index: 1;
+}
+
+a{
+    font-size: 16px;
+}
+p{
+    font-size: 15px;
+
+}
